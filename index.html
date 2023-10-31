@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+<body>
+<!--------------------UVOD-------------------------->   
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Monika <i class="fa-solid fa-heart-pulse fa-beat"></i> Oravcova</h1>
+                <ul>
+                    <li><a href="#about">O mne</a></li>
+                    <li><a href="#portfolio">Moje projekty</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Junior Front-end Developer</p>
+                <h2>Ahojte, volám sa <strong>Monika</strong> a som <br>začínajúca Front-end Developerka.</h2>
+            </div>  
+        </div>
+    </div> 
+<!--------------------O MNE-------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-1">
+                    <img src="fotky/about_me.JPG">
+                </div>
+                <div class="about-2">
+                    <h1 class="sub-title">O mne</h1>
+                    <p>Zvedavý a pri pútavom kontente veľmi kreatívny človek so zmyslom pre estetiku a detail. Veľa analyzuje, to znamená, že v 99%-ách prípadov hľadá logiku, prípadne nejaký súvis.</p>
+                    <p>Zaujíma sa o oblasť zdravia, medicíny a IT. Veľmi fascinovaná softvérom ako takým, ale najmä samotným grafickým užívateľským rozhraním, preto sa rozhodla vstúpiť do "vesmíru IT" absolvovaním kurzu Front-end Developera v IT v kurze.</p><br>
+                    <p>Podľa typológie osobnosti MBTI - osobnosť typu <strong>INTJ</strong>.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Zručnosti</p>
+                        <p class="tab-links" onclick="opentab('experience')">Pracovné skúsenosti</p>
+                        <p class="tab-links" onclick="opentab('education')">Vzdelanie</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>GitHub</span></li>
+                            <li><span>Databázové systémy a SQL</span></li>
+                            <li><span>SQL Server Managment Studio (SSMS)</span></li>
+                            <li><span>Bootstrap</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>React.js</span></li>
+                            <li><span>MS Office</span></li>
+                            <li><span>Java</span></li>
+                            <li><span>VB.NET</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Programátor</span><br>Sunsoft plus, s.r.o.</li>
+                            <li><span>Výskumný pracovník</span><br>Výskumný ústav spojov, n.o.</li>
+                            <li><span>Farmaceutický laborant</span><br>Lekáreň Schneider</li>
+                            <li><span>Softvérový inžinier</span><br>Siemens Mobility, s.r.o.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Front-end Developer</span><br>IT v kurze</li>
+                            <li><span>Biomedicínske inžinierstvo</span><br>Žilinská univerzita v Žiline</li>
+                        </ul>
+                    </div>
+                    <a href="cv.html" class="btn">Pozri viac</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------------------PORTFOLIO-------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Moje projekty</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="fotky/old-pharmacy-bottles-maria-angelica-maira.jpg">
+                    <div class="layer">
+                        <h3>Internetová lekáreň</h3>
+                        <p>Jednoduchá webová stránka e-shopu lekárne.</p>
+                        <a href="https://monika1959.github.io/lekaren_projekt/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="fotky/book.jpg">
+                    <div class="layer">
+                        <h3>Knižnica</h3>
+                        <p>Základný princíp fungovania knižnice - vypožičiavanie a vrátenie požičaných kníh.</p>
+                        <a href="https://monika1959.github.io/kniznica/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------------------KONTAKT-------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Kontakt</h1>
+                    <p><strong><i class="fa-solid fa-at fa-fade"></i> e-mail:</strong>  oravcovam04@gmail.com</p>
+                    <p><strong><i class="fa-solid fa-phone fa-shake"></i> telefón:</strong>   +421907 652 217</p>
+                    <p><strong><i class="fa-brands fa-linkedin fa-bounce"></i> LinkedIn:</strong> <a href="https://www.linkedin.com/in/monika-oravcova/" target="_blank"> https://www.linkedin.com/in/monika-oravcova/</a></p>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="topFunction()" id="btn-top" title="Poď hore!"><i class="fa-solid fa-arrow-up fa-lg"></i><br>Poď hore! 😎</button>
+        <div class="copyright">
+            <p>Copyright @ Monika <i class="fa-solid fa-heart-pulse fa-beat"></i> Oravcova</p>
+        </div>
+    </div>
+     
+<!--------------------JS - tabs + "back to top" button--------------------------> 
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    // "back to top" button
+        let mybutton = document.getElementById("btn-top");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        
+    </script>
+
+</body>
+</html>
