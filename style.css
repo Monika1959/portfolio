@@ -1,0 +1,395 @@
+/* index.html */
+*{
+margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+box-sizing: border-box;
+}
+#btn-top{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    z-index: 99;
+    width: 15%;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 7px;
+    border: 3px solid darkorange;
+    background-color: orangered;
+    color: azure;
+    left: 80%;
+    cursor: cell;
+}
+#btn-top:hover{
+    background-color: orange;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    color: aqua;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(fotky/introduction.JPG);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: auto;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+h1{
+    width: 140px;
+    color: rgb(17, 184, 184);
+}
+h1 i{
+    color: red;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color:  white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    cursor: cell;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h2{
+    font-size: 60px;
+
+}
+/* --------------O MNE------------ */
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-1{
+    flex-basis: 35%;
+}
+.about-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    font-weight: bold;
+    color: rgb(78, 74, 74);
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: cell;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: aqua;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* --------------PORTFÓLIO------------ */
+#portfolio{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), green);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+.layer a{
+    margin-top: 20px;
+    color: darkgreen;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid aqua;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+}
+.btn:hover{
+    background: aquamarine;
+}
+
+/* --------------KONTAKT------------ */
+.contact-left{
+    flex-basis: 50%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: aqua;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+    color: aqua;
+}
+.copyright i{
+    color: red;
+}
+
+/*  cv.html  */
+main{
+    background-image: url(fotky/cv_backround.jpg);
+    background-position: left 10px center;
+    background-repeat: no-repeat;
+}
+#title{
+    width: 160px;
+    padding: 20px;
+}
+.row-cv{
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: wrap;
+}
+
+/* ------------Ľavé kolonky---------- */
+.elipse-left{
+    position: relative;
+    flex-basis: 50%;
+    border-radius: 100px;
+    border: 2px solid white;
+    padding: 4%;
+    margin: 15px;
+    left: 27%;
+}
+.elipse-left h3{
+    padding: 10px;
+}
+.elipse-left-img{
+    flex-basis: 30%;
+}
+.elipse-left-img img{
+    position: absolute;
+    max-width: 50%;
+    height: auto;
+    padding: 5px;
+    z-index: 999;
+    left: 73%;
+    opacity: 1;
+    transform: scale(0.25);
+    transform-origin: top left;
+}
+
+/* ------------Pravé kolonky---------- */
+.elipse-right{
+    position: relative;
+    flex-basis: 50%;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 4%;
+    margin: 15px;
+    left: 5.5%;
+}
+.elipse-right ul{
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.elipse-right-img{
+    flex-basis: 30%;
+}
+.elipse-right-img img{
+    position: absolute;
+    max-width: 50%;
+    height: auto;
+    padding: 5px;
+    z-index: 999;
+    left: 29%;
+    opacity: 1;
+    transform: scale(0.25);
+    transform-origin: top left;
+}
+
+/* --------------ZRUČNOSTI------------ */
+.skills-bar{
+    width: 200px;
+    height: 18px;
+    background-color: rgb(121, 118, 118);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 9px;
+}
+.skills-level{
+    height: 100%;
+    background-color: green;
+    padding-left: 10px; 
+    font-size: medium;
+}
+.skills-left{
+    flex-basis: 50%;
+}
+.skills-right{
+    flex-basis: 50%;
+}
+.skills-left p{
+    margin-top: 8px;
+}
+
+/* --------------JAZYKY------------ */
+.language-bar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    align-items: center;
+    outline-offset: 5px;
+    box-shadow: 0 2px 0 2px  red, 0 0 0 3px blue;
+}
+
+/* --------------ZÁĽUBY------------ */
+.hobbys-left{
+    flex-basis: 30%;
+}
+.hobbys-middle{
+    flex-basis: 30%;
+}
+.hobbys-right{
+    flex-basis: 30%;
+}
+.hobbys-left p{
+    margin-top: 8px;
+    font-weight: bold;
+}
+.hobbys-middle p{
+    margin-top: 8px;
+    font-weight: bold;
+}
+.hobbys-right p{
+    margin-top: 8px;
+    font-weight: bold;
+}
+.hobby img{
+    width: 45%;
+    margin-left: 40%;
+    margin-right: 60%;
+    padding: 10px;
+    border-radius: 50%;
+}
+

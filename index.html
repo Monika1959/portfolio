@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+<body>
+<!--------------------UVOD-------------------------->   
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Monika <i class="fa-solid fa-heart-pulse fa-beat"></i> Oravcova</h1>
+                <ul>
+                    <li><a href="#about">O mne</a></li>
+                    <li><a href="#portfolio">Moje projekty</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>UX/UI designerka</p>
+                <h2>Ahojte, volám sa <br><i>Monika</i> - vyštudovaná <i>biomedička</i> s vášňou pre <i>UX/UI design</i>.</h2>
+            </div>  
+        </div>
+    </div> 
+<!--------------------O MNE-------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-1">
+                    <img src="fotky/about_me.JPG">
+                </div>
+                <div class="about-2">
+                    <h1 class="sub-title">O mne</h1>
+                    <p>Zvedavý a pri pútavom kontente veľmi kreatívny človek so zmyslom pre estetiku a detail. Veľa analyzuje, to znamená, že v 99%-ách prípadov hľadá logiku, prípadne nejaký súvis.</p>
+                    <p>Zaujíma sa o oblasť zdravia, medicíny a IT. Veľmi fascinovaná softvérom ako takým, ale najmä samotným grafickým užívateľským rozhraním.</p><br>
+                    <p>Podľa typológie osobnosti MBTI - osobnosť typu <strong>INTJ</strong>.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Zručnosti</p>
+                        <p class="tab-links" onclick="opentab('experience')">Pracovné skúsenosti</p>
+                        <p class="tab-links" onclick="opentab('education')">Vzdelanie</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Design Thinking</span></li>
+                            <li><span>User Research</span></li>
+                            <li><span>Figma</span></li>
+                            <li><span>FigJam</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>Bootstrap</span></li>
+                            <li><span>GitHub</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>Next.js</span></li>
+                            <li><span>Databázové systémy a SQL</span></li>
+                            <li><span>SQL Server Management</span></li>
+                            <li><span>MS Office</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Programátor</span><br>Sunsoft plus, s.r.o.</li>
+                            <li><span>Výskumný pracovník</span><br>Výskumný ústav spojov, n.o.</li>
+                            <li><span>Farmaceutický laborant</span><br>Lekáreň Schneider</li>
+                            <li><span>Softvérový inžinier</span><br>Siemens Mobility, s.r.o.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UX/UI Design</span><br>Skvot</li>
+                            <li><span>Úvod do UX</span><br>SUXA</li>
+                            <li><span>Front-end Developer</span><br>IT v kurze</li>
+                            <li><span>Biomedicínske inžinierstvo</span><br>Žilinská univerzita v Žiline</li>
+                        </ul>
+                    </div>
+                    <a href="cv.html" class="btn">Pozri viac</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------------------PORTFOLIO-------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Moje projekty</h1>
+            <div class="work-list">
+                <div class="work">
+                    <h2>UX/UI</h2>
+                    <img src="fotky/Display.png">
+                    <div class="layer">
+                        <h3>Redesign webu kamdomesta.sk</h3>
+                        <p>UX/UI | Web App | Mobile App</p>
+                        <p>SUXA</p>
+                        <a href="https://monikaoravcova.notion.site/redesign-webu-kamdomesta-sk-193d3926009e475a843cf089245b5a02" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="fotky/cofee_titul.png">
+                    <div class="layer">
+                        <h3>E-shop "<img src="data:image/png;base64,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" style="width: 10%; display: inline;"> zrnko"</h3>
+                        <p>UX/UI | Web App | Mobile App</p>
+                        <p>Skvot</p>
+                        <a href="https://monikaoravcova.notion.site/e-shop-zrnko-3c2dd7166e6442869de0b777cb9b60e9" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="work-list">
+                <div class="work">
+                    <h2>Front-end</h2>
+                    <img src="fotky/old-pharmacy-bottles-maria-angelica-maira.jpg">
+                    <div class="layer">
+                        <h3>Internetová lekáreň</h3>
+                        <p>Jednoduchá webová stránka e-shopu lekárne.</p>
+                        <a href="https://monika1959.github.io/lekaren_projekt/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="fotky/book.jpg">
+                    <div class="layer">
+                        <h3>Knižnica</h3>
+                        <p>Základný princíp fungovania knižnice - vypožičiavanie a vrátenie požičaných kníh.</p>
+                        <a href="https://monika1959.github.io/kniznica/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------------------KONTAKT-------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Kontakt</h1>
+                    <p><strong><i class="fa-solid fa-at fa-fade"></i> e-mail:</strong> uvedený v CV </p>
+                    <p><strong><i class="fa-solid fa-phone fa-shake"></i> telefón:</strong>  uvedený v  CV</p>
+                    <p><strong><i class="fa-brands fa-linkedin fa-bounce"></i> LinkedIn:</strong> <a href="https://www.linkedin.com/in/monika-oravcova/" target="_blank"> https://www.linkedin.com/in/monika-oravcova/</a></p>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="topFunction()" id="btn-top" title="Poď hore!"><i class="fa-solid fa-arrow-up fa-lg"></i><br>Poď hore! 😎</button>
+        <div class="copyright">
+            <p>Copyright © Monika <i class="fa-solid fa-heart-pulse fa-beat"></i> Oravcova</p>
+        </div>
+    </div>
+     
+<!--------------------JS - tabs + "back to top" button--------------------------> 
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    // "back to top" button
+        let mybutton = document.getElementById("btn-top");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        
+    </script>
+
+</body>
+</html>
